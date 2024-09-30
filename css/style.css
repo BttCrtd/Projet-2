@@ -76,11 +76,12 @@ a {
     width: 65%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    justify-content: space-between
 }
 
 .hebergement-cards{
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .hebergement-cards .card{
@@ -118,6 +119,19 @@ a {
     margin-bottom: 5px;
 }
 
+.hebergements .see-more{
+    margin: 0;
+    padding: 0;
+    width: 110px;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    cursor: pointer;
+}
+
+.hebergements .see-more-txt{
+    margin: 0;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
