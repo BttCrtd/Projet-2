@@ -295,15 +295,14 @@ form input{
     margin: 0;
     padding: 0;
     width: 110px;
+    font-size: 18px;
+    font-weight: bold;
     border: none;
     background-color: transparent;
     text-align: left;
     cursor: pointer;
 }
 
-.hebergements .see-more-txt{
-    margin: 0;
-}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
