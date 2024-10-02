@@ -190,10 +190,15 @@ form input{
     gap: 15px;
 }
 
+.filters-contener {
+    display: flex;
+    gap: 15px;
+}
+
 .filters-elements{
     display: flex;
     justify-content: start;
-    gap: 15px
+    gap: 15px;
 }
 
 .btn-filter{
@@ -201,7 +206,6 @@ form input{
     font-size: 17px;
     font-weight: bold;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 10px;
     background-color: white;
@@ -407,6 +411,8 @@ footer div {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .filters-section{
+        flex-direction: column;
+        align-items: start;
         gap: 20px;
     }
 
@@ -512,15 +518,21 @@ footer div {
         align-items: start;
         gap: 20px;
     }
+
+    .filters-contener{
+        width: 100%;
+        flex-direction: column;
+    }
     
     .filters-elements{
+        width: 100%;
         gap: 10px;
         flex-wrap: wrap;
     }
     
     .btn-filter{
         font-size: 14px;
-        flex: 1
+        flex: 1;
     }
 
     /***** Hébergement and populaire */
