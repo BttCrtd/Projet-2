@@ -40,6 +40,11 @@ a {
     text-decoration: none;
 }
 
+h3{
+    margin: 0;
+    font-size: 18px;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -58,6 +63,15 @@ a {
 
 .card-title {
     font-size: 16px;
+    margin: 0;
+}
+
+.card-subtitle {
+    margin: 0;
+}
+
+.card-rating {
+    margin-bottom: 5px;
 }
 
 .euro {
@@ -176,11 +190,6 @@ form input{
     gap: 15px;
 }
 
-.filters-section h3{
-    font-size: 18px;
-    margin: 0;
-}
-
 .filters-elements{
     display: flex;
     justify-content: start;
@@ -283,13 +292,6 @@ form input{
     margin-bottom: 8px;
 }
 
-.hebergement-cards .card-subtitle {
-    margin: 0;
-}
-
-.hebergement-cards .card-rating {
-    margin-bottom: 5px;
-}
 
 .hebergements .see-more{
     margin: 0;
@@ -341,13 +343,6 @@ form input{
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
-    margin: 0;
-}
-
-.populaires-cards .card-rating {
-    margin-bottom: 5px;
-}
 
 /********** Activités ***************/
 
@@ -387,9 +382,7 @@ form input{
     padding: 20px 19px;
 }
 
-.activities-cards-contener h3{
-    margin: 0;
-}
+
 /************* Footer **********************************/
 
 footer {
@@ -404,10 +397,6 @@ footer div {
     gap: 15px;
     padding: 20px;
     box-sizing: border-box;
-}
-
-footer h3{
-    margin: 0;
 }
 
 
@@ -446,10 +435,6 @@ footer h3{
 
     .populaires-cards a {
         flex: 1;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 16px;
     }
 
     .populaires-cards .card-subtitle {
@@ -613,8 +598,4 @@ footer h3{
         padding-bottom: 0;
     }
     
-    footer h3{
-        margin: 0;
-    }
-
 }
