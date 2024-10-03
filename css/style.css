@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -82,8 +83,7 @@ h3{
     color: var(--main-bg-color)
 }
 
-/***************** Header *********************/
-
+/***************** Navigation section *********************/
 header {
     display: flex;
     flex-direction: row;
@@ -118,8 +118,7 @@ nav a:hover {
     border-top: 2px solid #0065FC;
 }
 
-/************ Research ***********************/
-
+/************ Research section ***********************/
 .research{
     display: flex;
     flex-direction: column;
@@ -181,8 +180,7 @@ form input{
     height: 17px;
 }
 
-/************* Filters ************************/
-
+/************* Filters section ************************/
 .filters-section{
     display: flex;
     flex-direction: row;
@@ -235,7 +233,7 @@ form input{
     align-items: center;
 }
 
-/****** Hebergements And Populaires ***********/
+/****** Lodgings and populars section ***********/
 .lodgings-and-populars {
     display: flex;
     justify-content: space-between;
@@ -248,7 +246,7 @@ form input{
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/****** Lodging section ***********/
 .lodgings {
     width: 65%;
     display: flex;
@@ -257,14 +255,14 @@ form input{
     gap: 30px;
 }
 
+.lodging-cards a{
+    width: 100%;
+}
+
 .lodging-cards{
     display: flex;
     justify-content: space-between;
     gap: 30px;
-}
-
-.lodging-cards a{
-    width: 100%;
 }
 
 .lodging-cards .card{
@@ -309,7 +307,7 @@ form input{
     cursor: pointer;
 }
 
-/****** Populaires ***********/
+/****** Popular section ***********/
 .populars {
     width: 32%;
     margin: 0;
@@ -348,8 +346,7 @@ form input{
 }
 
 
-/********** Activités ***************/
-
+/********** Activitie section ***************/
 .activities{
     padding: 30px;
     display: flex;
@@ -387,8 +384,7 @@ form input{
 }
 
 
-/************* Footer **********************************/
-
+/************* Footer section **********************************/
 footer {
     background-color: #F2F2F2;
     display: flex;
@@ -410,6 +406,8 @@ footer div {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    /** Filters section **/
     .filters-section{
         flex-direction: column;
         align-items: start;
@@ -420,14 +418,17 @@ footer div {
         font-size: 16px;
     }
 
+    /** Lodgings and populars section **/
     .lodgings-and-populars {
         flex-direction: column;
     }
 
+    /** Loging section **/
     .lodgings {
         width: 100%;
     }
 
+    /** Popular section **/
     .populars {
         width: 100%;
         margin-top: 50px;
@@ -447,6 +448,7 @@ footer div {
         font-size: 13px;
     }
 
+    /** Activite section **/
     .activities-cards-container img{
         height: 200px;
     }
@@ -454,17 +456,13 @@ footer div {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
-    body{
-        margin: 0;
-    }
 
     .main-container{
         padding: 0px;
     }
     
 
-    /**** Header ********/
-
+    /** Navigation section **/
     header {
         flex-direction: column;
         align-items: center;
@@ -487,8 +485,7 @@ footer div {
         border-bottom: 2px solid #0065FC;
     }
 
-    /****  Research ********/
-
+    /** Research section **/
     .research{
         padding: 0 20px;
     }
@@ -511,8 +508,7 @@ footer div {
         display: inline;
     }
     
-    /****   Filters  ******/
-
+    /** Filters section **/
     .filters-section{
         flex-direction: column;
         align-items: start;
@@ -535,8 +531,7 @@ footer div {
         flex: 1;
     }
 
-    /***** Hébergement and populaire */
-
+    /** Lodgings and populars section **/
     .lodgings-and-populars {
         flex-direction: column-reverse;
         gap: 15px;
@@ -547,7 +542,12 @@ footer div {
         padding: 35px 20px; 
     }
 
-    /**** Populaires ***********/
+    .lodgings-and-populars section:not(.populars) {
+        background-color: transparent;
+        padding: 20px;
+    }
+
+    /** Populars section **/
     .populars {
         margin-top: 0;
     }
@@ -564,13 +564,7 @@ footer div {
         margin-top: 15px;
     }
 
-    /***** Hébergements ********/
-
-    .lodgings-and-populars section:not(.populars) {
-        background-color: transparent;
-        padding: 20px;
-    }
-
+    /** Lodging section **/
     .lodgings{
         gap: 15px;
     }
@@ -584,8 +578,7 @@ footer div {
         width: 100%;
     }
     
-    /**** Activities *******/
-    
+    /** Activitie section **/
     .activities-cards-container{
         flex-direction: column;
         gap: 15px;
@@ -595,9 +588,7 @@ footer div {
         height: 141px;
     }
     
-
-    /****   Footer *****/
-
+    /** Footer section **/
     footer {
         margin-top: 0;
         gap:50px;
