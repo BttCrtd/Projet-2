@@ -116,6 +116,7 @@ nav a{
 nav a:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
+    padding-top: 12.6px;
 }
 
 /************ Research section ***********************/
@@ -483,6 +484,8 @@ footer div {
     nav a:hover {
         border-top: none;
         border-bottom: 2px solid #0065FC;
+        padding-bottom: 12.6px;
+        padding-top: 0px;
     }
 
     /** Research section **/
